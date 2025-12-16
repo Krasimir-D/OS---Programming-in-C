@@ -1,4 +1,4 @@
-# Solutions
+# Solution
 
 <p>
 
