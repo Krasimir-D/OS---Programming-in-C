@@ -27,3 +27,6 @@ The errx() function does essentially the same as **err()** in terms of outputtin
 **errx()** is used for business-logic/program-logic type of errors.
 
 **err()** is used for errors regarding failed system calls.
+
+## What is **errno**
+**errno** is a global error indicator defined in **<errno.h>**, used by C library functions and system calls to explain why an operation failed.
