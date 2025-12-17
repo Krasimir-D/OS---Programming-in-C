@@ -1,4 +1,5 @@
 # Solution
+Open a file and print the first 10 lines of its contents
 
 <p>
 
