@@ -50,3 +50,18 @@ int close(int fd);
 
 close() closses a file descriptor, so that it no longer refers to any file and may be reused. Any record lock held on the file it was associated with, and owned by the process are removed.
 close() returns zero on success. On error, -1 is returned.
+
+## lseek from <unistd.h>
+**lseek - reposition read/write file offset**
+
+**Synopsis:**
+
+off_t lseek(int fd, off_t offset, int whence);
+
+**lseek()** repositions the file offset of the open file description associated with the file descriptor ***fd*** to argument ***offset*** according to the directive ***whence*** as it follows.
+
+* **SEEK_SET** - reposition the file offset to ***offset*** bytes relative to the start of the file
+* **SEEK_CUR** - reposition the file offset to ***offset*** bytes relative to the current file offset
+* **SEEK_END** - reposition the file offset to ***offset*** bytes relative to the EOF
+
+lseek() returns the resulting offset as measure in bytes from the beginning of the file. On error, the value (off_t) -1 is returned and errno is set to indicate the error
